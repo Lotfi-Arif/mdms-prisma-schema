@@ -1,3 +1,4 @@
 .env
 .gitignore
 prototyping
+node_modules
