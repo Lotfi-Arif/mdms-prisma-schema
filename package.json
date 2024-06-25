@@ -1,6 +1,6 @@
 {
   "name": "@lotfiarif-development/prisma-schema",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -14,8 +14,8 @@
     "postinstall": "npm run generate"
   },
   "devDependencies": {
-    "@prisma/client": "^5.5.2",
-    "prisma": "^5.5.2"
+    "@prisma/client": "5.16.0",
+    "prisma": "5.16.0"
   },
   "peerDependencies": {
     "@prisma/client": ">=5"
