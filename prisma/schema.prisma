@@ -12,10 +12,11 @@ model User {
     id        String   @id @default(uuid())
     email     String   @unique
     name      String
-    password  String
+    // there is no need to store the password in the database, we will use clerk to handle authentication
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-    clerkId   String?
+    // The id below is used to reference the user with our clerk authentication=
+    clerkId   String   @unique
 
     // Specific user roles
     student  Student?
